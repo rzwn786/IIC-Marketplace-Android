@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!--tools:openDrawer="start"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/logo4" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_color">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="11dp"
+                        android:gravity="center"
+                        android:iconifiedByDefault="false"
+                        android:includeFontPadding="true"
+                        android:textAlignment="center"
+                        app:defaultQueryHint="What Are You Looking For ?"
+                        app:iconifiedByDefault="false"
+                        app:queryHint="What Are You Looking For ?" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="287dp"
+                    android:layout_marginTop="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="true"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1">
+
+                </com.smarteist.autoimageslider.SliderView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="400dp"
+                    android:gravity="center"
+                    android:text="@string/sell_faster_and_find_great_deals"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/findBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="43dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="457dp"
+                        android:layout_marginEnd="208dp"
+                        android:background="#03A9F4"
+                        android:gravity="center"
+                        android:text="@string/f"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/sellBtn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/sellBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="43dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="228dp"
+                        android:layout_marginTop="458dp"
+                        android:autoSizePresetSizes="false"
+                        android:background="#f2ab68"
+                        android:gravity="center"
+                        android:text="@string/SELL"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/findBtn"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="427dp"
+                        android:gravity="center"
+                        android:text="@string/maintext"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginBottom="299dp"
+                        android:background="@drawable/car" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginBottom="278dp"
+                        android:text="@string/car"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="61dp"
+                        android:layout_marginBottom="154dp"
+                        android:text="Job"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="189dp"
+                        android:layout_marginBottom="155dp"
+                        android:text="Service"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="132dp"
+                        android:layout_marginBottom="23dp"
+                        android:text="Pets"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="263dp"
+                        android:layout_marginBottom="24dp"
+                        android:text="Games"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="189dp"
+                        android:layout_marginBottom="281dp"
+                        android:text="Hobbies"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="309dp"
+                        android:layout_marginBottom="154dp"
+                        android:text="Electronics"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginBottom="280dp"
+                        android:text="Properties"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginBottom="174dp"
+                        android:background="@drawable/job" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="107dp"
+                        android:layout_marginBottom="45dp"
+                        android:background="@drawable/pet" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="245dp"
+                        android:layout_marginBottom="45dp"
+                        android:background="@drawable/games" />
+
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="175dp"
+                        android:layout_marginBottom="301dp"
+                        android:background="@drawable/hobby"
+                        android:foregroundGravity="center" />
+                    />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="172dp"
+                        android:layout_marginBottom="174dp"
+                        android:background="@drawable/service" />
+
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="306dp"
+                        android:layout_marginBottom="300dp"
+                        android:background="@drawable/property"
+                        android:foregroundGravity="center" />
+                    />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="305dp"
+                        android:layout_marginBottom="175dp"
+                        android:background="@drawable/phone" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

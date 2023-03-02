@@ -1,0 +1,60 @@
+<resources>
+
+    <string name="app_name">IIC Marketplace</string>
+    <string name="Sell_Faster"><![CDATA[Sell Faster & Find Great Deals]]></string>
+    <string name="find">Find</string>
+    <string name="sell">SELL</string>
+    <string name="todo">TODO</string>
+    <string name="SELL">SELL</string>
+    <string name="FIND">SELL</string>
+    <string name="menu">menu</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="user">User</string>
+    <string name="user_gmail_com">user@gmail.com</string>
+    <string name="navigation_drawer_open">Open Navigation drawer</string>
+    <string name="navigation_drawer_close">Close Navigation drawer</string>
+    <string name="sell_faster_and_find_great_deals">Sell Faster And Find Great Deals</string>
+    <string name="f">FIND</string>
+    <string name="logo" />
+    <string name="email_username">Email / Username</string>
+    <string name="password">Password</string>
+    <string name="home">Home</string>
+
+
+    <string-array name="categories">
+        <item>ALL CATEGORIES</item>
+        <item>VEHICLES</item>
+        <item>ELECTRONICS</item>
+        <item>HOME AND PERSONAL ITEMS</item>
+        <item>LEISURE/SPORTS/HOBBIES</item>
+        <item>JOBS AND SERVICES</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="location">Location</string>
+    <string name="day_posted">Day Posted</string>
+    <string name="id">ID</string>
+    <string name="rm">RM</string>
+    <string name="create_new_listing">Create New Listing</string>
+    <string name="click_to_add_photo">Click to add photo</string>
+    <string name="click_to_add_photo_1">+ Click to add Photo</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="categories">Categories</string>
+    <string name="enter_item_title">Enter item title</string>
+    <string name="condition">Condition</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="postage">Postage</string>
+    <string name="submit">Submit</string>
+    <string name="maintext">Popular Search</string>
+    <string name="car">Car</string>
+    <string name="only_1_image_allowed">*Only 1 Image Allowed</string>
+    <string name="publish_listing">Publish Listing</string>
+    <string name="sign_up_text">Sign Up</string>
+
+</resources>
