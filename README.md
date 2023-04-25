@@ -2,9 +2,6 @@
 
 IIC Marketplace is a mobile app developed in Java, with MySQL as the backend database, and REST APIs for connection. It serves as an online platform for buying and selling various items. The app allows users to view other users' listings and contact them via WhatsApp to inquire about the item they are interested in.
 
-
-
-
 ![Screenshot_20230228-003117_IIC Marketplace](https://user-images.githubusercontent.com/100117450/234135826-8dd1bf59-c70f-46eb-a1d3-ae237603ae9a.jpg)
 
 ![Screenshot_20230228-003130_IIC Marketplace](https://user-images.githubusercontent.com/100117450/234135835-ed8224ff-5036-4949-a89b-1f9c4099bb16.jpg)
